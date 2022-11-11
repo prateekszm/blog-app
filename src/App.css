@@ -1,38 +1,182 @@
-.App {
-  text-align: center;
+body {
+  background-color: #424244;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  background-color: #292929;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.logo {
+
+  flex: .1;
+  display: flex;
+  margin: auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+
+}
+
+.navbar ul {
+  flex: .5;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+.search {
+
+  flex: .3;
+  display: flex;
+  justify-content: center;
+
+}
+
+.search input {
+  
+  border: none;
+  margin: auto;
+
+  width: 80%;
+  background: #292929;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><path fill='%23838D99' d='M13.22 14.63a8 8 0 1 1 1.41-1.41l4.29 4.29a1 1 0 1 1-1.41 1.41l-4.29-4.29zm-.66-2.07a6 6 0 1 0-8.49-8.49 6 6 0 0 0 8.49 8.49z'></path></svg>");
+  background-repeat: no-repeat;
+  outline: none;
+  background-position: 10px 10px;
+  background-size: 10px 10px;
+  box-shadow: 1px 1px 2px 0 rgb(224, 222, 222);
+  border-radius: 2px;
+  font-family: JetBrains Mono;
+  color: white;
+  padding: .5em 1em .5em 2.5em;
+}
+
+.search input:focus{
+  outline: none;
+  box-shadow: -2px -2px 2px 0 rgba(184, 218, 193, 0.16);
+}
+
+.navlist {
+  margin: auto;
+  text-align: center;
+  color: #9e9e9e;
+  text-decoration: none;
+
+}
+.navlist:hover{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo:hover {
+  background-color: #424244;
+  background-position: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.signOff {
+  text-align: center;
+  flex: .1;
+  display: flex;
+  justify-content: center;
+
+}
+
+.loginPage{
+  display: flex;
+  /* border: 1px red solid; */
+  height: 100vh;
+}
+
+.loginRight{
+  /* border: 1px green solid; */
+  flex: .5;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+
+  
+}
+.card{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 16px;
+  background-color: #181818;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+  width: 50%;
+  border-radius: 12px;
+  border: 1px white solid;
+  
+}
+
+.card h3{
+  text-align: center;
+}
+
+.cardDetails{
+  
+  display: block;
+}
+.label{
+  padding-top: 10px;
+  display: block;
+  /* margin-bottom: 7px; */
+}
+.login{
+  display: flex;
+  justify-content: center;
+}
+.buttonsAuth{
+ display: flex;
+ justify-content: center;
+}
+.authbutton{
+  display: block;
+  justify-content: space-around;
+  text-align: end;
+  background-color: rgb(255, 0, 0);
+}
+
+
+.loginTextField{
+  background-color: #292929;
+  
+  outline: none;
+  /* box-shadow: 2px 1px 2px 0 rgb(71, 71, 71); */
+  border-radius: 4px;
+  font-family: JetBrains Mono;
+  color: rgb(164, 153, 153);
+  display: block;
+  border: 2px solid #9e9e9e;
+  padding: 6px;
+  width: 90%;
+  margin-bottom: 10px;
+
+  
+}
+.loginButton{
+  background-repeat: no-repeat;
+  width: 60%;
+  margin: 6px 16px;
+  border-radius: 12px;
+  background-color:#424244
+  
+}
+
+
+.loginLeft{
+  /* border: 1px blueviolet solid; */
+  flex: .5;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+ 
 }
