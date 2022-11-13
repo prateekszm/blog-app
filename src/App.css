@@ -1,5 +1,5 @@
 body {
-  background-color: #424244;
+  background-color: #181818;
   margin: 0;
   padding: 0;
 }
@@ -179,4 +179,39 @@ body {
   display: flex;
   justify-content: center;
  
+}
+.aboutUs{
+  height: 100vh;
+  width: auto;
+  display: inline-block;
+  background-color: red;
+}
+
+.bgimg1{
+  background-image: url("./Assets/road.jpg");
+  
+  height: 100%;
+  
+}
+.bgimg2{
+  margin: 50px;
+  background-image: url("./Assets/chad.jpg");
+  height: 100%;
+
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.caption span.border {
+  background-color: rgb(177, 157, 157);
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 2px;
 }

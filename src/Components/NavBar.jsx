@@ -7,8 +7,8 @@ const NavBar = () => {
             <div className="logo"><NavLink className="navlist" tag={NavLink} to="/">Level</NavLink></div>
 
             <ul>
-                <NavLink className="navlist" tag={NavLink} to="/home">Home</NavLink>
-                <NavLink className="navlist" tag={NavLink} to="/">About us</NavLink>
+                <NavLink className="navlist" tag={NavLink} to="/user/home">Home</NavLink>
+                <NavLink className="navlist" tag={NavLink} to="/about">About us</NavLink>
                 <NavLink className="navlist" tag={NavLink} to="/">Post</NavLink>
                 <NavLink className="navlist" tag={NavLink} to="/">Profile</NavLink>
                 
