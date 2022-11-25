@@ -9,8 +9,8 @@ const NavBar = () => {
             <ul>
                 <NavLink className="navlist" tag={NavLink} to="/user/home">Home</NavLink>
                 <NavLink className="navlist" tag={NavLink} to="/about">About us</NavLink>
-                <NavLink className="navlist" tag={NavLink} to="/">Post</NavLink>
-                <NavLink className="navlist" tag={NavLink} to="/">Profile</NavLink>
+                <NavLink className="navlist" tag={NavLink} to="/dashboard">Dashboard</NavLink>
+                <NavLink className="navlist" tag={NavLink} to="/profile">Profile</NavLink>
                 
             </ul>
             <div class="search">

@@ -18,18 +18,17 @@ const Login = () => {
     });
     useEffect(() => {
         const node = document.getElementById("smallPasswordIndicator")
-        if (loginData.password.length > 8) {
+        if (loginData.password.length > 8 || loginData.password.length ==    0) {
             node.innerHTML = ""
         } else if (loginData.password.length !== 0 && loginData.password.length < 8) {
             clearTimeout(timer)
             const newTimer = setTimeout(() => {
                 node.innerHTML = "too small"
             }, 500)
-
+            
             setTimer(newTimer)
-        } else {
-            node.innerHTML = ""
         }
+        console.log(loginData.password.length)
 
     }, [loginData])
 

@@ -5,3 +5,9 @@ export const getAllPost = () =>{
     .then((response)=>response.data)
     .catch((error)=>error.data)
 }
+
+export const createPost = (data) =>{
+    return tokenAxios.post(`post/user/${data.userId}/category/${data.categoryId}/posts`,data)
+    .then((response)=>response.data)
+    .catch((error)=>error.data)
+}
